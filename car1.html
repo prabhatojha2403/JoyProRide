@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Creta
+    </title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+   <header>
+    <a href="#" class="logo">HYUNDAI CRETA</a>
+    <ul>
+        <li><a href="index.html" class="active ">Home</a></li>
+        <li><a href="#sec">About</a></li>
+        <li><a href="#sec">Work</a></li>
+        <li><a href="contact2.html">Book</a></li>
+    </ul>
+   </header> 
+   <section>
+    <img src="/carsimg/stars.png" alt="" id="stars">
+    <img src="/carsimg/moon.png" alt="" id="moon">
+    <img src="/carsimg/mountains_behind.png" alt="" id="mountains_behind">
+    <h2 id="text">Creta</h2>
+    <!-- <a href="#sec" id="btn">Rent Now!</a>sec -->
+    <img src="/carsimg/mountains_front.png" alt="" id="mountains_front">
+   </section>
+   <div class="sec" id="sec">
+    <h2>Hyundai Creta</h2>
+    <p> 
+        The Hyundai Creta is a popular compact SUV that offers a combination of style, performance, and practicality. Introduced in 2015, the Creta quickly gained popularity in various markets worldwide. It is known for its attractive design, feature-packed interior, and reliable performance.
+        <br><br>
+        <h3>Exterior:</h3>
+        <p>
+        The Hyundai Creta features a contemporary and dynamic design language that is both stylish and eye-catching. It typically has a bold front grille with chrome accents, sleek projector headlights, and LED daytime running lights. The body has muscular lines and sculpted contours that give it a sporty and robust appearance. The SUV stance is accentuated by its high ground clearance and prominent wheel arches. The Creta comes with alloy wheels and roof rails, which add to its overall appeal.
+    </p>
+        <br><br>
+        <h3>Interior:</h3>
+        <p>
+        Step inside the Hyundai Creta, and you'll find a well-designed and spacious cabin. The interior offers a blend of comfort and functionality, with high-quality materials and finishes. The seating is comfortable and supportive, providing ample legroom and headroom for both front and rear passengers. The rear seats can be folded to expand the cargo space, making it versatile for carrying larger items.
+        </p>
+        <br><br>
+        <h3>Technology and Features:</h3>
+        <p>
+        The Creta is known for its extensive list of features and advanced technology. It typically comes equipped with a touchscreen infotainment system that supports connectivity features such as Apple CarPlay and Android Auto. Other features include a premium sound system, Bluetooth connectivity, USB ports, steering wheel-mounted controls, and a rearview camera. Higher trim levels may offer additional features like a panoramic sunroof, wireless charging, automatic climate control, and a navigation system.
+    </p>
+        <br><br>
+        <h3>Performance:</h3>
+        <p>
+        Hyundai Creta offers a range of engine options depending on the market, including gasoline and diesel engines. The powertrains are typically mated to either a manual or automatic transmission, providing smooth and responsive shifts. The Creta delivers a comfortable and composed ride, with well-tuned suspension that absorbs road imperfections effectively. It offers good maneuverability in urban environments and decent off-road capability, thanks to its higher ground clearance.
+    </p>
+        <br><br>
+        <h3>Safety:</h3>
+        <p>
+        Safety is a priority in the Hyundai Creta, and it usually comes equipped with a host of safety features. These may include multiple airbags, anti-lock braking system (ABS), electronic stability control (ESC), traction control, hill-start assist, rear parking sensors, and a tire pressure monitoring system. Higher trim levels may offer additional safety features like blind-spot monitoring, rear cross-traffic alert, and lane-keeping assist.
+    </p>
+       <br> <br>
+       <p>
+       Overall, the Hyundai Creta is a stylish and practical compact SUV that offers a comfortable and feature-packed driving experience. Its combination of design, performance, and safety features has made it a popular choice among consumers looking for a versatile and reliable vehicle in the compact SUV segment.
+    </p>
+     
+
+    </p>
+   </div>
+   <script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let head = document.querySelector('header');
+
+    window.addEventListener('scroll',function(){
+     let value = window.scrollY;
+     stars.style.left = value * 0.25 + 'px';
+     moon.style.top = value * 1.05 * 'px';
+     mountains_behind.style.top= value *0.5 + 'px';
+     mountains_front.style.top = value *0 + 'px';
+     text.style.marginRight=value*4+'px';
+     text.style.marginTop = value *1.5 +'px';
+     btn.style.marginTop=value*1.5 +'px';
+     header.style.top=value *0.5 +'px';
+    })
+   </script>
+</body>
+</html>
